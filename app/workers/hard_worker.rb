@@ -4,10 +4,8 @@ class HardWorker
   def perform(name, count)
     primes = []
 
-    i = 0
-    while i < count
+    for i in 0..count
       primes << i if isPrime(i)
-      i += 1
     end
 
     puts "#{name} job: From 0 to #{count} there are #{primes.count} prime numbers."
