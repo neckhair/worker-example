@@ -43,3 +43,9 @@ I can quit sidekiq properly before shutting down Redis.
 
 === Web Frontend
 There is also a very simple web frontend: link:http://localhost:3000. When you click on Start the controller schedules a task for sidekiq.
+
+== Links
+* Clockwork: link:https://github.com/tomykaira/clockwork
+* Sidekiq: link:https://github.com/mperham/sidekiq
+* Foreman: link:https://github.com/ddollar/foreman
+* Redis: link:http://redis.io/
