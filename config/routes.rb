@@ -1,7 +1,11 @@
+require 'sidekiq/web'
+
 Worker::Application.routes.draw do
   root :to => 'worker#index'
 
   match '/start' => 'worker#start'
+
+  mount Sidekiq::Web => '/sidekiq'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

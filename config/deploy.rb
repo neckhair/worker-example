@@ -1,7 +1,14 @@
 set :application, "Worker Tester"
 set :repository,  "."
 
+require 'rvm/capistrano'
+set :rvm_ruby_string, 'ruby-1.9.3-p286'
+set :rvm_type, :user
+
+require 'bundler/capistrano'
+
 set :scm, :git
+set :deploy_via, :copy
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :user, 'deploy'

@@ -3,6 +3,6 @@ class WorkerController < ApplicationController
   end
 
   def start
-    redirect_to :index
+    redirect_to :root
   end
 end

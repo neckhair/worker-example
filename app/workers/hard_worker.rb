@@ -1,8 +1,13 @@
 
-class HardWorker
-  include Sidekiq::Worker
 
-  def perform(name, count)
-    puts 'Doing hard work'
+module Workers
+
+  class HardWorker
+    include Sidekiq::Worker
+
+    def perform(name, count)
+      puts "#{name}'s doing hard work."
+    end
   end
+
 end

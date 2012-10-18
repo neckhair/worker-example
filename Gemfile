@@ -14,12 +14,17 @@ gem 'redis'
 gem 'sidekiq'
 gem 'thin'
 
+# Sidekiq dependencies
+gem 'slim'
+gem 'sinatra', :require => nil
+
 # Block code block
 gem 'redis-mutex'
 
 # Hilfs Gems
 gem 'haml-rails'
 gem 'capistrano'
+gem 'rvm-capistrano'
 
 # Gems used only for assets and not required
 # in production environments by default.
