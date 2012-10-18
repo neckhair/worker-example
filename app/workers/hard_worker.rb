@@ -5,12 +5,12 @@ class HardWorker
     primes = []
 
     i = 0
-    while i < 1000000
+    while i < count
       primes << i if isPrime(i)
       i += 1
     end
 
-    puts primes.inspect
+    puts "#{name} job: From 0 to #{count} there are #{primes.count} prime numbers."
   end
 
   private
