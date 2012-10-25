@@ -8,23 +8,17 @@ gem 'rails', '3.2.8'
 gem 'sqlite3'
 
 # Worker Gems
-gem 'foreman'
 gem 'clockwork'
 gem 'redis'
 gem 'sidekiq'
-gem 'thin'
 
 # Sidekiq dependencies
 gem 'slim'
 gem 'sinatra', :require => nil
 
-# Block code block
-gem 'redis-mutex'
-
 # Hilfs Gems
 gem 'haml-rails'
-gem 'capistrano'
-gem 'rvm-capistrano'
+gem 'foreman'
 
 # Gems used only for assets and not required
 # in production environments by default.
