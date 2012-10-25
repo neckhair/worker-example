@@ -1,6 +1,6 @@
 == Worker Example
 
-This little app demonstrates how the Clockwork and Sidekiq Gems work together.
+This little app demonstrates how the Clockwork and Sidekiq Gems work together. I wrote a blog post (in german) which can be found here: link:http://www.neckhair.ch/2012/10/rails-sidekiq/
 
 == Getting Started
 
