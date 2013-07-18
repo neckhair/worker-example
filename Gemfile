@@ -12,6 +12,9 @@ gem 'clockwork'
 gem 'redis'
 gem 'sidekiq'
 
+gem 'sidekiq-middleware'    # Enables Unique Jobs
+gem 'sidetiq'               # Scheduled Jobs for Sidekiq
+
 # Sidekiq dependencies
 gem 'slim'
 gem 'sinatra', :require => nil

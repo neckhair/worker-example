@@ -4,8 +4,9 @@ class WorkerController < ApplicationController
   end
 
   def start
-    HardWorker.perform_async('manual job', 1000)
-    flash[:notice] = 'HardWorker started its work'
+    if HardWorker.perform_async("manual job", 10000000)
+      flash[:notice] = 'HardWorker started its work'
+    end
     redirect_to :root
   end
 end

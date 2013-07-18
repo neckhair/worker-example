@@ -1,7 +1,12 @@
 class HardWorker
   include Sidekiq::Worker
+  include Sidetiq::Schedulable
+
+  sidekiq_options unique: :all
+  #recurrence { minutely.second_of_minute(15, 45) }
 
   def perform(name, count)
+    puts "#{name} job: Starting to count prime numbers from 0 to #{count}."
     primes = []
 
     for i in 0..count
